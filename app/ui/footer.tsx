@@ -15,6 +15,7 @@ export function Footer() {
                     <Link
                         key={"Instagram"}
                         href={"https://www.instagram.com/by__monicavaras/"}
+                        target="_blank"
                     >
                         <li className="underline">Instagram</li>
                     </Link>
@@ -25,6 +26,7 @@ export function Footer() {
                     <Link
                         key={"Instagram"}
                         href={"mailto:photo@bymonicavaras.com"}
+                        target="_blank"
                     >
                         <li className="underline">photo@bymonicavaras.com</li>
                     </Link>

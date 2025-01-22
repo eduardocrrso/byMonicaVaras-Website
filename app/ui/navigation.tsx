@@ -24,7 +24,7 @@ export default function Navigation() {
     const pathname = usePathname();
 
     return (
-        <div className="flex gap-12 sm:hidden">
+        <div className="flex gap-12">
             <Popover>
                 <PopoverButton className="border-b-1 flex block text-3xl mt-2 text-foreground focus:outline-none data-[active]:text-foreground data-[hover]:text-foreground data-[focus]:outline-1 data-[focus]:outline-foreground">
                     <div className='mt-2'>
