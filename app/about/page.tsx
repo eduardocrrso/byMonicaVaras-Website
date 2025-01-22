@@ -13,7 +13,7 @@ export default function Page() {
     const text3 = `For me, photography isn't just a hobby—it's a way to connect with the world and express my creativity through visual storytelling, especially when it comes to documenting the love and joy of a couple's wedding day.`
 
     return (
-        <>
+        <div className="max-w-3xl mx-auto">
             <ul className={`${brygada.className} text-md flex justify-between`}>
                 <li className="flex">
                     <p>
@@ -37,6 +37,6 @@ export default function Page() {
                 {text3}
             </p>
             <br />
-        </>
+        </div>
     );
 }
