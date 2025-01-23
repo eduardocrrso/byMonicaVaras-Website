@@ -2,6 +2,32 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  [type='text'],
+  input:where(:not([type])),
+  [type='email'],
+  [type='url'],
+  [type='password'],
+  [type='number'],
+  [type='date'],
+  [type='datetime-local'],
+  [type='month'],
+  [type='search'],
+  [type='tel'],
+  [type='time'],
+  [type='week'],
+  [multiple],
+  textarea,
+  select {
+    @apply bg-background border-t-0 border-x-0 border-foreground focus:border-foreground focus:border-y-2 focus:-mt-[3px] focus:ring-transparent;
+  }
+
+  [type='checkbox'],
+  [type='radio'] {
+    @apply text-foreground bg-background focus:ring-background;
+  }
+}
+
 :root {
   --background: #E9E6DF;
   --foreground: #4F4931;
