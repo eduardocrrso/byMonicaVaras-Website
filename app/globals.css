@@ -27,8 +27,7 @@
             px-0
             focus:border-foreground
             focus:border-b-2
-            focus:-mt-[1px]
-            focus:pb-1
+            focus:-mb-[1px]
             focus:ring-transparent
             w-full;
   }
@@ -37,12 +36,16 @@
     @apply relative mt-6;
   }
 
+  .groupCheckbox li {
+    @apply mt-2;
+  }
+
   [type='checkbox'],
   [type='radio'] {
     @apply text-foreground bg-background focus:ring-background;
   }
 
-  label {
+  label.floating {
     @apply absolute left-0 -top-4 text-sm
     peer-placeholder-shown:text-base
     peer-placeholder-shown:text-gray
@@ -52,6 +55,7 @@
     peer-focus:text-foreground
     transition-all;
   }
+
 /*   
     [type='text']+label,
     [type='email']+label {
