@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 @layer base {
+
   [type='text'],
   input:where(:not([type])),
   [type='email'],
@@ -19,14 +20,61 @@
   [multiple],
   textarea,
   select {
-    @apply bg-background border-t-0 border-x-0 border-foreground focus:border-foreground focus:border-y-2 focus:-mt-[3px] focus:ring-transparent;
+    @apply bg-background
+            border-t-0
+            border-x-0
+            border-foreground
+            px-0
+            focus:border-foreground
+            focus:border-b-2
+            focus:-mt-[1px]
+            focus:pb-1
+            focus:ring-transparent
+            w-full;
+  }
+
+  form li {
+    @apply relative mt-6;
   }
 
   [type='checkbox'],
   [type='radio'] {
     @apply text-foreground bg-background focus:ring-background;
   }
+
+  label {
+    @apply absolute left-0 -top-4 text-sm
+    peer-placeholder-shown:text-base
+    peer-placeholder-shown:text-gray
+    peer-placeholder-shown:top-2
+    peer-focus:-top-4
+    peer-focus:text-sm
+    peer-focus:text-foreground
+    transition-all;
+  }
+/*   
+    [type='text']+label,
+    [type='email']+label {
+      @apply absolute left-0 -top-4 text-sm
+      peer-placeholder-shown:text-base
+      peer-placeholder-shown:text-gray
+      peer-placeholder-shown:top-2
+      peer-focus:-top-4
+      peer-focus:text-sm
+      peer-focus:text-foreground
+      transition-all;
+    } */
+  
 }
+
+/* absolute left-0 -top-4 text-sm
+peer-placeholder-shown:text-base
+peer-placeholder-shown:text-gray
+peer-placeholder-shown:top-2
+peer-focus:-top-4
+peer-focus:text-sm
+peer-focus:text-foreground
+transition-all */
 
 :root {
   --background: #E9E6DF;

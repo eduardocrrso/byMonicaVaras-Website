@@ -16,40 +16,87 @@ export default function Page() {
                 <ul className="grid gap-4">
                     <div className="flex gap-4">
                         <li className="flex-1">
-                            <label htmlFor="fiancesFirstName">{"Fiance's First Name"}<span className="required">*</span></label>
-                            <input type="text" id="fiancesFirstName" name="fiancesFirstName" required className="w-full" />
+                            <input
+                                type="text"
+                                id="fiancesFirstName"
+                                name="fiancesFirstName"
+                                required
+                                className="peer"
+                                placeholder=""
+                            />
+                            <label htmlFor="fiancesFirstName">
+                                {"Fiance's First Name"}<span className="required">*</span>
+                            </label>
                         </li>
                         <li className="flex-1">
+                            <input
+                                type="text"
+                                id="fiancesLastName"
+                                name="fiancesLastName"
+                                className="peer"
+                                placeholder=""
+                            />
                             <label htmlFor="fiancesLastName">{"Fiance's Last Name"}</label>
-                            <input type="text" id="fiancesLastName" name="fiancesLastName" className="w-full" />
                         </li>
                     </div>
 
                     <div className="flex gap-4">
                         <li className="flex-1">
+                            <input
+                                type="text"
+                                id="fianceesFirstName"
+                                name="fianceesFirstName"
+                                required
+                                className="peer"
+                                placeholder=""
+                            />
                             <label htmlFor="fianceesFirstName">{"Fiancee's First Name"}<span className="required">*</span></label>
-                            <input type="text" id="fianceesFirstName" name="fianceesFirstName" required className="w-full" />
                         </li>
 
                         <li className="flex-1">
+                            <input
+                                type="text"
+                                id="fianceesLastName"
+                                name="fianceesLastName"
+                                className="peer"
+                                placeholder=""
+                            />
                             <label htmlFor="fianceesLastName">{"Fiancee's Last Name"}</label>
-                            <input type="text" id="fianceesLastName" name="fianceesLastName" className="w-full" />
                         </li>
                     </div>
 
                     <li>
+                        <input
+                            type="text"
+                            id="email"
+                            name="email"
+                            required
+                            className="peer"
+                            placeholder=""
+                        />
                         <label htmlFor="email">{"Contact Email"}<span className="required">*</span></label>
-                        <input type="text" id="email" name="email" required className="w-full" />
                     </li>
 
                     <li>
+                        <input
+                            type="text"
+                            id="eventLocation"
+                            name="eventLocation"
+                            className="peer"
+                            placeholder=""
+                        />
                         <label htmlFor="eventLocation">{"Event Location"}<span className="required">*</span></label>
-                        <input type="text" id="eventLocation" name="eventLocation" className="w-full" />
                     </li>
 
                     <li>
+                        <input
+                            type="text"
+                            id="countryOfResidence"
+                            name="countryOfResidence"
+                                className="peer"
+                                placeholder=""
+                            />
                         <label htmlFor="countryOfResidence">{"Country of Residence"}<span className="required">*</span></label>
-                        <input type="text" id="countryOfResidence" name="countryOfResidence" className="w-full" />
                     </li>
                     <div className="flex justify-between flex-wrap gap-4">
                         <li>
