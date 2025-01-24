@@ -33,7 +33,7 @@
   }
 
   form li {
-    @apply relative mt-6;
+    @apply relative mt-6 z-0;
   }
 
   .groupCheckbox li {
