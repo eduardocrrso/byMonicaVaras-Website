@@ -3,7 +3,7 @@
 // Refactor rhis "header". Ideally both mobile and desktop should get some of this props from its parent element *Fix
 // Also links do not have a unique prop key. Flag was disabled to build on netlify *Fix
 
-import { Popover, PopoverButton, PopoverPanel, PopoverBackdrop } from '@headlessui/react'
+import { Popover, PopoverButton, PopoverPanel } from '@headlessui/react'
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import clsx from 'clsx';
@@ -37,11 +37,10 @@ export default function MenuMobile() {
                     </div>
                     Menu
                 </PopoverButton>
-                <PopoverBackdrop className="fixed inset-0 bg-black/15 opacity-0" />
                 <PopoverPanel
                     transition
                     anchor="bottom"
-                    className="flex flex-col gap-4 p-4 divide-y divide-white/5 rounded-sm bg-background transition duration-500 ease-in-out [--anchor-gap:var(--spacing-5)] data-[closed]:-translate-y-1 data-[closed]:opacity-0"
+                    className="flex flex-col gap-4 p-4 divide-y divide-white/5 rounded-sm bg-background transition duration-500 ease-in-out [--anchor-gap:var(--spacing-5)] data-[closed]:-translate-y-1 data-[closed]:opacity-0 z-40"
                 >
                     {links.map((link) => {
                         return (
