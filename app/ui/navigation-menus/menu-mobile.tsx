@@ -3,7 +3,7 @@
 // Refactor rhis "header". Ideally both mobile and desktop should get some of this props from its parent element *Fix
 // Also links do not have a unique prop key. Flag was disabled to build on netlify *Fix
 
-import { Popover, PopoverButton, PopoverPanel } from '@headlessui/react'
+import { CloseButton, Popover, PopoverButton, PopoverPanel } from '@headlessui/react'
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import clsx from 'clsx';
@@ -57,28 +57,17 @@ export default function MenuMobile() {
                                     },
                                 )}>
                                 </span>
-                                <Link
-                                    key={link.name}
-                                    href={link.href}
-                                    className={clsx(
-                                        "text-3xl transition-colors duration-500",
-                                        {
-                                            "text-foreground": pathname === link.href,
-                                            "text-gray": pathname !== link.href,
-                                        },
 
-                                    )}
-                                    id={clsx(
-                                        {
-                                            "home": link.href === "/",
-                                            "about": link.href === "/about",
-                                            "contact": link.href === "/contact",
-                                        },
-                                    )}>
-                                    <p key={link.name}>{link.name}</p>
-                                </Link>
-                                <span>
-                                </span>
+                                <CloseButton as={Link} href={link.href} className={clsx(
+                                    "text-3xl transition-colors duration-500",
+                                    {
+                                        "text-foreground": pathname === link.href,
+                                        "text-gray": pathname !== link.href,
+                                    },
+
+                                )}>
+                                    {link.name}
+                                </CloseButton>
                             </div>
                         );
                     })}
