@@ -7,7 +7,7 @@ export default function Page() {
     const handleFormSubmit = async (event: any) => {
         event.preventDefault();
         const formData = new FormData(event.target);
-        await fetch("/__forms.html", {
+        await fetch("/public/__forms.html", {
             method: "POST",
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
             body: new URLSearchParams(formData.toString()).toString(),
