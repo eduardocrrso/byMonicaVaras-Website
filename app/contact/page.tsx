@@ -10,7 +10,7 @@ export default function Page() {
         await fetch("/__forms.html", {
             method: "POST",
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
-            body: new URLSearchParams(formData.toString()),
+            body: new URLSearchParams(formData.toString()).toString(),
         });
         // Success and error handling ...
     };
