@@ -7,7 +7,7 @@ export default function Page() {
     const handleFormSubmit = async (event: any) => {
         event.preventDefault();
         const formData = new FormData(event.target);
-        await fetch("/public/__forms.html", {
+        await fetch("/__forms.html", {
             method: "POST",
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
             body: new URLSearchParams(formData.toString()).toString(),
@@ -34,6 +34,7 @@ export default function Page() {
                     method="POST"
                     netlify-honeypot="bot-field"
                 >
+                    <input type="hidden" name="form-name" value="contact" />
                     <ul className="grid gap-4">
                         <div className="flex gap-4">
                             <li className="flex-1">
