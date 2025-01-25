@@ -14,14 +14,6 @@ export default function Page() {
 
     return (
         <div className="max-w-3xl mx-auto">
-            <ul className={`${brygada.className} text-md flex justify-between`}>
-                <li className="flex">
-                    <p>
-                        Mexico
-                    </p>
-                </li>
-                <li>{new Date().getFullYear()}</li>
-            </ul>
             <br />
             <h2 className={`${brygada.className} text-5xl text-right`}>Mónica Varas</h2>
             <br />
