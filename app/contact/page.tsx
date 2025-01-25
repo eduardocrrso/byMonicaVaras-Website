@@ -4,16 +4,6 @@ import Link from "next/link";
 import Image from "next/image";
 
 export default function Page() {
-    const handleFormSubmit = async (event: any) => {
-        event.preventDefault();
-        const formData = new FormData(event.target);
-        await fetch("/__forms.html", {
-            method: "POST",
-            headers: { "Content-Type": "application/x-www-form-urlencoded" },
-            body: new URLSearchParams(formData.toString()).toString(),
-        });
-        // Success and error handling ...
-    };
     return (
         <>
             <p className="mb-4 text-center">{"Please let me know about your plans and I'll get back to you shortly."}</p>
@@ -27,13 +17,7 @@ export default function Page() {
                 />
             </div>
             <div className="max-w-xl mx-auto">
-                <form
-                    name="contact"
-                    onSubmit={handleFormSubmit}
-                    action="/success"
-                    method="POST"
-                    netlify-honeypot="bot-field"
-                >
+                <form action="https://formbold.com/s/9Rdl2" method="POST">
                     <input type="hidden" name="form-name" value="contact" />
                     <ul className="grid gap-4">
                         <div className="flex gap-4">
