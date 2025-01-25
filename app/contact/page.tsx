@@ -7,11 +7,11 @@ export default function Page() {
             <p className="mb-8 text-center">{"Please let me know about your plans and I'll get back to you shortly."}</p>
 
             <form
-                action="/contacto/gracias/"
-                method="POST"
                 name="contact"
+                action="/success"
+                method="POST"
+                data-netlify="true"
                 netlify-honeypot="bot-field"
-            // netlify
             >
                 <ul className="grid gap-4">
                     <div className="flex gap-4">
@@ -83,6 +83,7 @@ export default function Page() {
                             name="eventLocation"
                             className="peer"
                             placeholder=""
+                            required
                         />
                         <label htmlFor="eventLocation" className="floating">{"Event Location"}<span className="required">*</span></label>
                     </li>
@@ -94,8 +95,20 @@ export default function Page() {
                             name="countryOfResidence"
                             className="peer"
                             placeholder=""
+                            required
                         />
                         <label htmlFor="countryOfResidence" className="floating">{"Country of Residence"}<span className="required">*</span></label>
+                    </li>
+                    <li>
+                        <input
+                            type="text"
+                            id="weddingPlanner"
+                            name="weddingPlanner"
+                            className="peer"
+                            placeholder=""
+                            required
+                        />
+                        <label htmlFor="weddingPlanner" className="floating">{"Who's your wedding planner?"}<span className="required">*</span></label>
                     </li>
                     <li>
                         <input
@@ -104,8 +117,9 @@ export default function Page() {
                             name="budget"
                             className="peer"
                             placeholder=""
+                            required
                         />
-                        <label htmlFor="budget" className="floating">{"What's your budget?"}</label>
+                        <label htmlFor="budget" className="floating">{"What's your budget?"}<span className="required">*</span></label>
                     </li>
 
                     <ul className="groupCheckbox">
@@ -142,7 +156,7 @@ export default function Page() {
                 <ul>
                     <li className="mt-16">
                         <textarea name="message" id="message" cols={30} rows={4} className="min-w-full h-24 border-t-[1px] peer focus:border-t-[2px]" placeholder=""></textarea>
-                        <label htmlFor="message" aria-required="true" className="absolute left-0 -top-4 text-sm
+                        <label htmlFor="message" className="absolute left-0 -top-4 text-sm
                                                                                 peer-placeholder-shown:text-base
                                                                                 peer-placeholder-shown:text-gray
                                                                                 peer-placeholder-shown:top-2
