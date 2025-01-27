@@ -54,31 +54,8 @@
     peer-focus:text-sm
     peer-focus:text-foreground
     transition-all;
-  }
-
-/*   
-    [type='text']+label,
-    [type='email']+label {
-      @apply absolute left-0 -top-4 text-sm
-      peer-placeholder-shown:text-base
-      peer-placeholder-shown:text-gray
-      peer-placeholder-shown:top-2
-      peer-focus:-top-4
-      peer-focus:text-sm
-      peer-focus:text-foreground
-      transition-all;
-    } */
-  
+  }  
 }
-
-/* absolute left-0 -top-4 text-sm
-peer-placeholder-shown:text-base
-peer-placeholder-shown:text-gray
-peer-placeholder-shown:top-2
-peer-focus:-top-4
-peer-focus:text-sm
-peer-focus:text-foreground
-transition-all */
 
 :root {
   --background: #E9E6DF;
