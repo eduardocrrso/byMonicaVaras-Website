@@ -24,6 +24,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <meta name="apple-mobile-web-app-title" content="Mónica Varas" />
+      </head>
       <body
         className={`${manrope.className} antialiased min-h-screen flex flex-col`}
       >
