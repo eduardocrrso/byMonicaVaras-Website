@@ -1,9 +1,15 @@
 import { Brygada_1918 } from "next/font/google";
+import { Metadata } from "next";
 
 const brygada = Brygada_1918({
     weight: "400",
     subsets: ["latin"],
 });
+
+export const metadata: Metadata = {
+    title: 'About',
+    description: `I'm an avid photographer with a deep passion for capturing the world through my lens, and my specialty lies in wedding photography`,
+}
 
 export default function Page() {
     const text1 = `I'm an avid photographer with a deep passion for capturing the world through my lens, and my specialty lies in wedding photography.`

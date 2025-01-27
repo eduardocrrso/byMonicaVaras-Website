@@ -1,11 +1,16 @@
 import Image from "next/image";
 import { Brygada_1918 } from "next/font/google";
 import Link from "next/link";
+import { Metadata } from "next";
 
 const brygada = Brygada_1918({
     weight: "400",
     subsets: ["latin"],
 });
+
+export const metadata: Metadata = {
+    description: "Expert wedding photographer specializing in capturing timeless, beautiful moments. Offering high-quality photography services tailored to your unique wedding day, ensuring every smile, kiss, and detail is beautifully preserved. Let me tell your love story through stunning images.",
+}
 
 export default async function Home() {
     const height = 1350;

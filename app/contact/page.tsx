@@ -1,19 +1,13 @@
-'use client'
-
 import Link from "next/link";
 import Image from "next/image";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: 'Contact',
+    description: `Reach out to discuss your wedding photography needs! Whether you have questions or want to book a consultation, I'm here to help. Contact me today to create unforgettable memories through beautiful, personalized wedding photography.`
+}
 
 export default function Page() {
-    const handleFormSubmit = async (event: any) => {
-        event.preventDefault();
-        const formData = new FormData(event.target);
-        await fetch("/__forms.html", {
-            method: "POST",
-            headers: { "Content-Type": "application/x-www-form-urlencoded" },
-            body: new URLSearchParams(formData.toString()).toString(),
-        });
-        // Success and error handling ...
-    };
     return (
         <>
             <p className="mb-4 text-center">{"Please let me know about your plans and I'll get back to you shortly."}</p>
@@ -29,7 +23,6 @@ export default function Page() {
             <div className="max-w-xl mx-auto">
                 <form
                     name="contact"
-                    onSubmit={handleFormSubmit}
                     action="/success"
                     method="POST"
                     netlify-honeypot="bot-field"
