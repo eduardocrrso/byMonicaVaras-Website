@@ -9,7 +9,7 @@ const brygada = Brygada_1918({
 });
 
 export const metadata: Metadata = {
-    description: "Expert wedding photographer specializing in capturing timeless, beautiful moments. Offering high-quality photography services tailored to your unique wedding day, ensuring every smile, kiss, and detail is beautifully preserved. Let me tell your love story through stunning images.",
+    description: "Expert wedding photographer specializing in capturing timeless, beautiful moments. Offering high-quality photography services tailored to your unique wedding day.",
 }
 
 export default async function Home() {

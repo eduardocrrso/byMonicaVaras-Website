@@ -12,8 +12,8 @@ const manrope = Manrope({
 
 export const metadata: Metadata = {
   title: {
-    template: '%s | Mónica Varas Fine Art Photographer',
-    default: 'Mónica Varas Fine Art Photographer',
+    template: '%s | Mónica Varas Fine Art Wedding Photographer',
+    default: 'Mónica Varas Fine Art Wedding Photographer',
   },
   twitter: {
     card: 'summary_large_image',
