@@ -13,8 +13,8 @@ export default function Page() {
             <p className="mb-4 text-center">{"Please let me know about your plans and I'll get back to you shortly."}</p>
             <div className="h-[40vh] mx-auto mb-8 px-0 max-w-2xl">
                 <Image
-                    src={"/img/contact-photo.jpeg"}
-                    alt="Guys in a wedding"
+                    src={"/photos/contact-photo.webp"}
+                    alt="Wedding photo"
                     height="4160"
                     width="2774"
                     className="h-full object-cover mx-auto"

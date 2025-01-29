@@ -22,7 +22,7 @@ export default async function Home() {
 
                 <div className="h-full flex flex-col">
                     <Image
-                        src={"/photos/wedding-photo-01.jpeg"}
+                        src={"/photos/wedding-photo-01.webp"}
                         alt="Wedding photo"
                         height={height}
                         width={width}
@@ -45,7 +45,7 @@ export default async function Home() {
 
                 <div className="h-full flex flex-col">
                     <Image
-                        src={"/photos/wedding-photo-02.jpeg"}
+                        src={"/photos/wedding-photo-02.webp"}
                         alt="Wedding photo"
                         height={height}
                         width={width}
@@ -68,7 +68,7 @@ export default async function Home() {
 
                 <div className="h-full flex flex-col">
                     <Image
-                        src={"/photos/wedding-photo-03.jpeg"}
+                        src={"/photos/wedding-photo-03.webp"}
                         alt="Wedding photo"
                         height={height}
                         width={width}
@@ -91,7 +91,7 @@ export default async function Home() {
 
                 <div className="h-full flex flex-col">
                     <Image
-                        src={"/photos/wedding-photo-04.jpeg"}
+                        src={"/photos/wedding-photo-04.webp"}
                         alt="Wedding photo"
                         height={height}
                         width={width}
@@ -114,7 +114,7 @@ export default async function Home() {
 
                 <div className="h-full flex flex-col">
                     <Image
-                        src={"/photos/wedding-photo-05.jpeg"}
+                        src={"/photos/wedding-photo-05.webp"}
                         alt="Wedding photo"
                         height={height}
                         width={width}
@@ -137,7 +137,7 @@ export default async function Home() {
 
                 <div className="h-full flex flex-col">
                     <Image
-                        src={"/photos/wedding-photo-06.jpeg"}
+                        src={"/photos/wedding-photo-06.webp"}
                         alt="Wedding photo"
                         height={height}
                         width={width}
@@ -160,7 +160,7 @@ export default async function Home() {
 
                 <div className="h-full flex flex-col">
                     <Image
-                        src={"/photos/wedding-photo-07.jpeg"}
+                        src={"/photos/wedding-photo-07.webp"}
                         alt="Wedding photo"
                         height={height}
                         width={width}
@@ -183,7 +183,7 @@ export default async function Home() {
 
                 <div className="h-full flex flex-col">
                     <Image
-                        src={"/photos/wedding-photo-08.jpeg"}
+                        src={"/photos/wedding-photo-08.webp"}
                         alt="Wedding photo"
                         height={height}
                         width={width}
@@ -206,7 +206,7 @@ export default async function Home() {
 
                 <div className="h-full flex flex-col">
                     <Image
-                        src={"/photos/wedding-photo-09.jpeg"}
+                        src={"/photos/wedding-photo-09.webp"}
                         alt="Wedding photo"
                         height={height}
                         width={width}
