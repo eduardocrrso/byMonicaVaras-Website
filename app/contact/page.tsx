@@ -21,12 +21,7 @@ export default function Page() {
                 />
             </div>
             <div className="max-w-xl mx-auto">
-                <form
-                    name="contact"
-                    action="/success"
-                    method="POST"
-                    netlify-honeypot="bot-field"
-                >
+                <form action="https://formbold.com/s/9Rdl2" method="POST">
                     <input type="hidden" name="form-name" value="contact" />
                     <ul className="grid gap-4">
                         <div className="flex gap-4">
