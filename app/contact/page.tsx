@@ -21,7 +21,7 @@ export default function Page() {
                 />
             </div>
             <div className="max-w-xl mx-auto">
-                <form action="https://formbold.com/s/9Rdl2" method="POST">
+                <form action="https://formbold.com/s/98py1" method="POST">
                     <input type="hidden" name="form-name" value="contact" />
                     <ul className="grid gap-4">
                         <div className="flex gap-4">
@@ -178,6 +178,8 @@ export default function Page() {
                                 {"Tell me more about your plans"}
                             </label>
                         </li>
+
+                        <div className="g-recaptcha" data-sitekey="6Lclos8qAAAAABTljI9On0xLb2Y-9Da_h3fpH4B3"></div>
 
                         <li className="flex justify-center my-6">
                             <button type="submit" className="underline font-bold text-xl">{"Submit>>"}</button>
