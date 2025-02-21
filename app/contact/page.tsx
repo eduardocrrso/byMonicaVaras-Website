@@ -132,6 +132,18 @@ export default function Page() {
                             <label htmlFor="budget" className="floating">{"What's your budget?"}<span className="required">*</span></label>
                         </li>
 
+                        <li>
+                            <input
+                                type="text"
+                                id="igUsername"
+                                name="igUsername"
+                                className="peer"
+                                placeholder=""
+                                required
+                            />
+                            <label htmlFor="igUsername" className="floating">{"Instagram Username"}<span className="required">*</span></label>
+                        </li>
+
                         <ul className="groupCheckbox">
                             <li>
                                 <p>{"How did you hear about me?"}</p>
