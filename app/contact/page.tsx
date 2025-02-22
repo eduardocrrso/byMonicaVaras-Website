@@ -11,9 +11,9 @@ export default function Page() {
     return (
         <>
             <p className="mb-4 text-center">{"Please let me know about your plans and I'll get back to you shortly."}</p>
-            <div className="h-[40vh] mx-auto mb-8 px-0 max-w-2xl">
+            <div className="mx-auto mb-8 px-0 max-w-2xl">
                 <Image
-                    src={"/photos/contact-photo.webp"}
+                    src={"/photos/contact-photo.jpg"}
                     alt="Wedding photo"
                     height="4160"
                     width="2774"
