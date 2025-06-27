@@ -18,6 +18,75 @@ export default async function Home() {
     return (
         <main>
             <div className="grid grid-cols-2 md:grid-cols-3 gap-4 max-w-6xl mx-auto">
+                <div className="h-full flex flex-col">
+                    <Image
+                        src={"/photos/wedding-photo-10.webp"}
+                        alt="Wedding photo"
+                        height={height}
+                        width={width}
+                        className="h-full object-cover"
+                    />
+                </div>
+
+                <div className="h-full flex flex-col">
+                    <Image
+                        src={"/photos/wedding-photo-11.webp"}
+                        alt="Wedding photo"
+                        height={height}
+                        width={width}
+                        className="h-full object-cover"
+                    />
+                </div>
+
+                <div className="h-full flex flex-col">
+                    <Image
+                        src={"/photos/wedding-photo-12.webp"}
+                        alt="Wedding photo"
+                        height={height}
+                        width={width}
+                        className="h-full object-cover"
+                    />
+                </div>
+
+                <div className="h-full flex flex-col">
+                    <Image
+                        src={"/photos/wedding-photo-13.webp"}
+                        alt="Wedding photo"
+                        height={height}
+                        width={width}
+                        className="h-full object-cover"
+                    />
+                </div>
+
+                <div className="h-full flex flex-col">
+                    <Image
+                        src={"/photos/wedding-photo-14.webp"}
+                        alt="Wedding photo"
+                        height={height}
+                        width={width}
+                        className="h-full object-cover"
+                    />
+                </div>
+
+                <div className="h-full flex flex-col">
+                    <Image
+                        src={"/photos/wedding-photo-15.webp"}
+                        alt="Wedding photo"
+                        height={height}
+                        width={width}
+                        className="h-full object-cover"
+                    />
+                </div>
+
+                <div className="h-full flex flex-col">
+                    <Image
+                        src={"/photos/wedding-photo-16.webp"}
+                        alt="Wedding photo"
+                        height={height}
+                        width={width}
+                        className="h-full object-cover"
+                    />
+                </div>
 
                 <div className="h-full flex flex-col">
                     <Image
