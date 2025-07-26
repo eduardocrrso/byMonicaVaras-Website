@@ -9,6 +9,7 @@ export function Picture({ src }: { src: string }) {
         <motion.div initial={{ translateY: -8, opacity: 0}}
                     whileInView={{ translateY: 0, opacity: 1}}
                     viewport={{ once: true }}
+                    transition={{ duration: 0.6 }}
                     className="h-full flex flex-col">
             <Image
                 src={ src }
