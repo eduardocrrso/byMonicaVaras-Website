@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 
 export default async function Home() {
     const height = 1350;
-    const width = 1080;
+    const width = 900;
     const aspectRatio = 0.6666;
 
     return (
