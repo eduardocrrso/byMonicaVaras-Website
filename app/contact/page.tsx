@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Image from "next/image";
+import {Picture} from "@/app/components/picture";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -12,12 +12,11 @@ export default function Page() {
         <>
             <p className="mb-4 text-center">{"Please let me know about your plans and I'll get back to you shortly."}</p>
             <div className="mx-auto mb-8 px-0 max-w-2xl">
-                <Image
+                <Picture
                     src={"/photos/contact-photo.jpg"}
-                    alt="Wedding photo"
-                    height="4160"
-                    width="2774"
-                    className="h-full object-cover mx-auto"
+                    height={251.55}
+                    width={672}
+                    aspectRatio={2}
                 />
             </div>
             <div className="max-w-xl mx-auto">
