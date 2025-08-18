@@ -8,7 +8,7 @@ const brygada = Brygada_1918({
 
 export function Footer() {
     return (
-        <footer className="m-2">
+        <footer id="footer" className="m-2">
             <div className="mb-2 p-2">
                 <h3 className={`${brygada.className} text-lg`}>Follow</h3>
                 <ul>

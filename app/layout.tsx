@@ -50,7 +50,7 @@ export default function RootLayout({
         className={`${manrope.className} antialiased min-h-screen flex flex-col`}
       >
         <Header />
-        <div className="m-2 p-2 border-b-[1px] border-foreground flex-1">
+        <div id="page-animation-element" className="m-2 p-2 border-b-[1px] border-foreground flex-1">
           {children}
         </div>
 
