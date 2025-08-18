@@ -59,7 +59,7 @@ export default function MenuDesktop() {
                                     "contact": link.href === "/contact",
                                 },
                             )}>
-                            <p key={link.name}>{link.name}</p>
+                            <p>{link.name}</p>
                         </TransitionLink>
                         <span>
                         </span>
