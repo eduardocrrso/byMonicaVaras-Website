@@ -4,7 +4,6 @@
 // Also links do not have a unique prop key. Flag was disabled to build on netlify *Fix
 
 import {CloseButton, Popover, PopoverButton, PopoverPanel} from '@headlessui/react'
-import Link from "next/link";
 import {TransitionLink} from "@/app/utils/TransitionLink";
 import {usePathname} from "next/navigation";
 import clsx from 'clsx';
@@ -85,7 +84,7 @@ export default function MenuMobile() {
                                 )}>
                                 </span>
                                 <TransitionLink href={link.href}>
-                                    <CloseButton as={Link} href={link.href} className={clsx(
+                                    <CloseButton className={clsx(
                                         "text-5xl transition-colors duration-500",
                                         {
                                             "text-foreground": pathname === link.href,
