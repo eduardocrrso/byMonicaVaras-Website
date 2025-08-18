@@ -4,73 +4,84 @@
 
 @layer base {
 
-  [type='text'],
-  input:where(:not([type])),
-  [type='email'],
-  [type='url'],
-  [type='password'],
-  [type='number'],
-  [type='date'],
-  [type='datetime-local'],
-  [type='month'],
-  [type='search'],
-  [type='tel'],
-  [type='time'],
-  [type='week'],
-  [multiple],
-  textarea,
-  select {
-    @apply bg-background
-            border-t-0
-            border-x-0
-            border-foreground
-            px-0
-            focus:border-foreground
-            focus:border-b-2
-            focus:-mb-[1px]
-            focus:ring-transparent
-            w-full;
-  }
+    [type='text'],
+    input:where(:not([type])),
+    [type='email'],
+    [type='url'],
+    [type='password'],
+    [type='number'],
+    [type='date'],
+    [type='datetime-local'],
+    [type='month'],
+    [type='search'],
+    [type='tel'],
+    [type='time'],
+    [type='week'],
+    [multiple],
+    textarea,
+    select {
+        @apply bg-background
+        border-t-0
+        border-x-0
+        border-foreground
+        px-0
+        focus:border-foreground
+        focus:border-b-2
+        focus:-mb-[1px]
+        focus:ring-transparent
+        w-full;
+    }
 
-  form li {
-    @apply relative mt-6 z-0;
-  }
+    form li {
+        @apply relative mt-6 z-0;
+    }
 
-  .groupCheckbox li {
-    @apply mt-2;
-  }
+    .groupCheckbox li {
+        @apply mt-2;
+    }
 
-  [type='checkbox'],
-  [type='radio'] {
-    @apply text-foreground bg-background focus:ring-background;
-  }
+    [type='checkbox'],
+    [type='radio'] {
+        @apply text-foreground bg-background focus:ring-background;
+    }
 
-  label.floating {
-    @apply absolute left-0 -top-4 text-sm
-    peer-placeholder-shown:text-base
-    peer-placeholder-shown:text-gray
-    peer-placeholder-shown:top-2
-    peer-focus:-top-4
-    peer-focus:text-sm
-    peer-focus:text-foreground
-    transition-all;
-  }  
+    label.floating {
+        @apply absolute left-0 -top-4 text-sm
+        peer-placeholder-shown:text-base
+        peer-placeholder-shown:text-gray
+        peer-placeholder-shown:top-2
+        peer-focus:-top-4
+        peer-focus:text-sm
+        peer-focus:text-foreground
+        transition-all;
+    }
 }
 
 :root {
-  --background: #E9E6DF;
-  --foreground: #4F4931;
+    --background: #E9E6DF;
+    --foreground: #4F4931;
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #E9E6DF;
-    --foreground: #4F4931;
-  }
+    :root {
+        --background: #E9E6DF;
+        --foreground: #4F4931;
+    }
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+    color: var(--foreground);
+    background: var(--background);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#page-animation-element, #footer {
+    transition-property: opacity, filter;
+    transition-timing-function: ease-in-out;
+    transition-duration: 200ms;
+}
+
+.page-transition {
+    opacity: 0;
+    filter: blur(5px);
 }

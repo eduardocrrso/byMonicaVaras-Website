@@ -3,9 +3,8 @@
 // Refactor rhis "header". Ideally both mobile and desktop should get some of this props from its parent element *Fix
 // Also links do not have a unique prop key. Flag was disabled to build on netlify *Fix
 
-import { Popover, PopoverButton, PopoverPanel, PopoverBackdrop } from '@headlessui/react'
-import Link from "next/link";
-import { usePathname } from "next/navigation";
+import {TransitionLink} from "@/app/utils/TransitionLink";
+import {usePathname} from "next/navigation";
 import clsx from 'clsx';
 
 export default function MenuDesktop() {
@@ -43,7 +42,7 @@ export default function MenuDesktop() {
                             },
                         )}>
                         </span>
-                        <Link
+                        <TransitionLink
                             key={link.name}
                             href={link.href}
                             className={clsx(
@@ -52,7 +51,6 @@ export default function MenuDesktop() {
                                     "text-foreground": pathname === link.href,
                                     "text-gray": pathname !== link.href,
                                 },
-
                             )}
                             id={clsx(
                                 {
@@ -62,7 +60,7 @@ export default function MenuDesktop() {
                                 },
                             )}>
                             <p key={link.name}>{link.name}</p>
-                        </Link>
+                        </TransitionLink>
                         <span>
                         </span>
                     </div>
