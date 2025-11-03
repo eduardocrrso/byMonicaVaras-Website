@@ -96,6 +96,18 @@ export default function Page() {
                             />
                             <label htmlFor="eventLocation" className="floating">{"Event Location"}<span className="required">*</span></label>
                         </li>
+                        
+                        <li>
+                            <input
+                                type="text"
+                                id="eventDate"
+                                name="eventDate"
+                                className="peer"
+                                placeholder=""
+                                required
+                            />
+                            <label htmlFor="eventDate" className="floating">{"Event Date"}<span className="required">*</span></label>
+                        </li>
 
                         <li>
                             <input
