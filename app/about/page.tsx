@@ -22,17 +22,19 @@ export default function Page() {
             </p>
             <br />
             <p>
-                I find inspiration everywhere I go — from the quiet poetry of everyday life to the timeless masterpieces inside the Musée d’Orsay in Paris. Based mainly in Cabo and Vancouver, my work has been published in Vogue México, Vogue US, The Lane, and Architectural Digest — features that reflect my refined, documentary style and love for timeless elegance.
+                I find inspiration everywhere I go — from the quiet poetry of everyday life to the timeless masterpieces inside the Musée d’Orsay in <strong className="font-bold bg-[#4F493120]">Paris</strong>. Based mainly in <strong className="font-bold bg-[#4F493120]">Cabo</strong> and <strong className="font-bold bg-[#4F493120]">Vancouver</strong>, my work has been published in Vogue México, Vogue US, The Lane, and Architectural Digest — features that reflect my refined, documentary style and love for timeless elegance.
             </p>
             <br />
             <p>
-                From grand celebrations at St. Patrick’s Cathedral in New York, to horseback rides at sunset alongside zebras in Careyes, to filming a documentary at Monaco’s legendary Le Louis XV — my journey has taken me to settings as diverse as they are unforgettable. I’ve also been invited to showcase my vision internationally, including participation in prestigious photography competitions in Japan — experiences that continue to shape my global perspective and artistic voice.
+                From grand celebrations at St. Patrick’s Cathedral in <strong className="font-bold bg-[#4F493120]">New York</strong>, to horseback rides at sunset alongside zebras in <strong className="font-bold bg-[#4F493120]">Careyes</strong>, to filming a documentary at <strong className="font-bold bg-[#4F493120]">Monaco’s</strong> legendary Le Louis XV — my journey has taken me to settings as diverse as they are unforgettable. I’ve also been invited to showcase my vision internationally, including participation in prestigious photography competitions in <strong className="font-bold bg-[#4F493120]">Japan</strong> — experiences that continue to shape my global perspective and artistic voice.
             </p>
             <br />
             <p>
                 Constantly moving between the world’s most beautiful destinations, I tell wedding stories that blend elegance, emotion, and timeless beauty — creating images you can feel, not just see.
             </p>
             <br />
+            <p className="text-right">{"• In gratitude always,"}</p>
+            <p className="text-right">{"Monica,"}</p>
         </div>
     );
 }

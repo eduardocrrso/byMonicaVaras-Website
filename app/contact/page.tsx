@@ -199,7 +199,8 @@ export default function Page() {
                 </form>
 
                 {<p className="mt-12">{"I'll get back to you soon. Meanwhile you can look at some "} <Link href={"/"} className="underline">{"other photoshoots"}</Link> {"for some inspiration."}</p>}
-                <p className="text-right">{"- With love Monica"}</p>
+                <p className="text-right">{"• In gratitude always,"}</p>
+                <p className="text-right">{"Monica,"}</p>
             </div>
         </>
     );
