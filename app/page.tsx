@@ -14,6 +14,9 @@ export default async function Home() {
     return (
         <main>
             <div className="grid grid-cols-2 md:grid-cols-3 gap-4 max-w-6xl mx-auto">
+                <Picture src="/photos/wedding-photo-16.webp" width={width} height={height} aspectRatio={aspectRatio}/>
+                <Picture src="/photos/wedding-photo-17.webp" width={width} height={height} aspectRatio={aspectRatio}/>
+                <Picture src="/photos/wedding-photo-18.webp" width={width} height={height} aspectRatio={aspectRatio}/>
                 <Picture src="/photos/wedding-photo-01.webp" width={width} height={height} aspectRatio={aspectRatio}/>
                 <Picture src="/photos/wedding-photo-02.webp" width={width} height={height} aspectRatio={aspectRatio}/>
                 <Picture src="/photos/wedding-photo-03.webp" width={width} height={height} aspectRatio={aspectRatio}/>
@@ -29,9 +32,6 @@ export default async function Home() {
                 <Picture src="/photos/wedding-photo-13.webp" width={width} height={height} aspectRatio={aspectRatio}/>
                 <Picture src="/photos/wedding-photo-14.webp" width={width} height={height} aspectRatio={aspectRatio}/>
                 <Picture src="/photos/wedding-photo-15.webp" width={width} height={height} aspectRatio={aspectRatio}/>
-                <Picture src="/photos/wedding-photo-16.webp" width={width} height={height} aspectRatio={aspectRatio}/>
-                <Picture src="/photos/wedding-photo-17.webp" width={width} height={height} aspectRatio={aspectRatio}/>
-                <Picture src="/photos/wedding-photo-18.webp" width={width} height={height} aspectRatio={aspectRatio}/>
             </div>
         </main>
     );
