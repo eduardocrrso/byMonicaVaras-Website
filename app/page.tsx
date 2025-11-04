@@ -32,6 +32,9 @@ export default async function Home() {
                 <Picture src="/photos/wedding-photo-13.webp" width={width} height={height} aspectRatio={aspectRatio}/>
                 <Picture src="/photos/wedding-photo-14.webp" width={width} height={height} aspectRatio={aspectRatio}/>
                 <Picture src="/photos/wedding-photo-15.webp" width={width} height={height} aspectRatio={aspectRatio}/>
+                <Picture src="/photos/wedding-photo-19.webp" width={width} height={height} aspectRatio={aspectRatio}/>
+                <Picture src="/photos/wedding-photo-20.webp" width={width} height={height} aspectRatio={aspectRatio}/>
+                <Picture src="/photos/wedding-photo-21.webp" width={width} height={height} aspectRatio={aspectRatio}/>
             </div>
         </main>
     );
