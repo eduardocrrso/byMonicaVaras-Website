@@ -140,7 +140,7 @@ export default function Page() {
                                 placeholder=""
                                 required
                             />
-                            <label htmlFor="budget" className="floating">{"What's your budget?"}<span className="required">*</span></label>
+                            <label htmlFor="budget" className="floating">{"Photography Budget?"}<span className="required">*</span></label>
                         </li>
 
                         <li>
